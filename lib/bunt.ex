@@ -3,7 +3,10 @@ defmodule Bunt do
 
   @version Mix.Project.config[:version]
 
-  def puts(value \\ "") do
+  def puts(value \\ "", color \\ nil) do
+    if color
+      value = [value, color]
+    end
     value
     |> format
     |> IO.puts
