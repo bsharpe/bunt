@@ -4,7 +4,7 @@ defmodule Bunt do
   @version Mix.Project.config[:version]
 
   def puts(value \\ "", color \\ nil) do
-    if color
+    if color do
       value = [value, color]
     end
     value
