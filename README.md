@@ -2,6 +2,8 @@
 
 Enables 256 color ANSI coloring in the terminal and gives you the ability to alias colors to more semantic and application-specfic names.
 
+### NOTE: Forked from an old repo at http://github.com/arkgil/bunt
+
 
 ## Installation
 
@@ -54,6 +56,9 @@ which puts a bright orange-red `"world!"` on the screen.
 
 and since nobody can remember that `:color202` is basically `:orangered`, you can use `:orangered` directly.
 
+And for those that don't love the constant piping.
+
+    > Bunt.puts("Hello", :blue)
 
 
 ### Named colors
