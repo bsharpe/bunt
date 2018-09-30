@@ -3,10 +3,10 @@ defmodule Bunt do
 
   @version Mix.Project.config()[:version]
 
-  def puts(value \\ "", color \\ nil) do
+  def puts(value \\ "", color \\ :gold) do
     result =
       if !!color do
-        [value, color]
+        [color, value]
       else
         value
       end
